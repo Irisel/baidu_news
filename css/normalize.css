@@ -1,0 +1,7 @@
+body,input,textarea,button,select,pre,code{font-family:'Hiragino Sans GB','Microsoft YaHei',Tahoma,Arial,'\5b8b\4f53',sans-serif;font-size:75%;line-height:1.5}body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,form,fieldset,input,textarea,button,select,pre,blockquote,hr{margin:0}fieldset,legend,button,ul,ol{padding:0}a{text-decoration:none}ul,ol{list-style:none}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}img{border:none}
+.left{
+	float: left;
+}
+.right {
+	float: right;
+}

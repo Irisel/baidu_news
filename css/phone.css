@@ -1,0 +1,340 @@
+body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans GB','Microsoft YaHei',Tahoma,Arial,'\5b8b\4f53',sans-serif;font-size:75%;line-height:1.5}body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,form,fieldset,input,textarea,button,select,pre,blockquote,hr{margin:0}fieldset,legend,button,ul,ol{padding:0}a{text-decoration:none}ul,ol{list-style:none}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}img{border:none}
+.left{
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+.hd{
+    display: none;
+}
+
+.main0{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main1{
+	height: 871px;
+	width: 100%;
+	background: url(../images/bg1.jpg) center center no-repeat;
+	overflow: hidden;
+}
+
+.m1-content{
+  width: 94vw;
+  height: 65%;
+  margin: 0px auto 0;
+  background: url(../images/mobile_10.png) center center no-repeat;
+  position: relative;
+  background-size: contain;
+}
+
+.m1-content p{
+  line-height: 22px;
+  width: 80%;
+  margin: 0px auto 0;
+  font-size: 12px;
+  position: relative;
+  top: 92%;
+  overflow: overlay;
+  height: 20%;
+  min-height: 88px;
+}
+.m1-apply{
+  width: 56.8%;
+  height: 14.6%;
+  position: absolute;
+  display: block;
+  left: 21.6%;
+  top: 119.5%;
+  background: url('../images/mobile_apply.png') center center no-repeat;
+  background-size: contain;
+}
+.m1-logo{
+  width: 90%;
+  height: 10%;
+  margin: 0 5%;
+  background: url(../images/mobile_logo5.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+}
+.main2{
+	width: 100%;
+	background: url(../images/mobile_bg2.png) center center no-repeat;
+	overflow: hidden;
+	margin:2px 0 3px;
+    background-size: contain;
+}
+.m2-h2{
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  width: 100%;
+  margin-top: 75px;
+  display: block;
+}
+.m2-p{
+  width: 80%;
+  line-height: 30px;
+  color: #757575;
+  margin: 48px auto 0;
+  font-size: 15px;
+}
+.m2-btn{
+  width: 40%;
+  height: 40px;
+  margin: 20px auto 60px;
+  display: block;
+  background: url(../images/btn1.png) 0 0 no-repeat;
+  background-size: contain;
+  z-index:1000;
+}
+
+.main3{
+  width: 100%;
+  background: url(../images/mobile_bg3.png) center center no-repeat;
+  overflow: hidden;
+  background-size: 1676px 100%;
+}
+
+.m3-top{
+   color: #333;
+   margin-top: 40px;
+   text-align: center;
+   font-size: 22px;
+}
+.m3-tab{
+   width: 91%;
+   margin: 23px auto 0;
+   display: block;
+}
+
+.w135{
+  width: inherit;
+  display: block;
+  margin-bottom: 30px;
+}
+.m3-label{
+  height: 32px;
+  width: 97px;
+  text-align: center;
+  color: #fff;
+  background: #7d7c7c;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 5px auto auto;
+}
+.m3-tab p{
+	color: #262626;
+	font-size: 15px;
+	line-height: 28px;
+
+}
+
+.indent-p p{
+    padding-left: 10px;
+    text-indent: -10px;
+}
+
+.m3-tab tr{
+	margin-bottom: 40px;
+	display: block;
+}
+.footer{
+	display:none;
+}
+.ft{
+	width: 100vw;
+	height: 104px;
+	margin: 0 auto;
+	background: url(../images/logo4.png) center center no-repeat;
+	position: relative;
+}
+.ft1{
+   float: left;
+   width: 30%;
+   height: 60px;
+   display: block;
+}
+.ft2{
+   float: left;
+   width: 30%;
+   height: 60px;
+   display: block;
+}
+.ft3{
+   float: left;
+   width: 30%;
+   height: 60px;
+   display: block;
+}
+.ft4{
+   float: left;
+   width: 30%;
+   height: 60px;
+   display: block;
+}
+
+.jiathis_share_32x32 {
+    display:none !important
+}
+
+.weixin_share{
+    background-position: 0px 0px !important;
+}
+
+.weixin_tsina{
+    background-position: -48px 0px !important;
+}
+
+.weixin_renren{
+    background-position: -96px 0px !important;
+}
+
+.weixin_douban{
+    background-position: -144px 0px !important;
+}
+
+.weixin_tqq{
+   background-position: -192px 0px !important;
+}
+
+.qr {
+    display:none;
+}
+
+.phone-footer{
+  width:100%;
+}
+
+.phone-title{
+  display: block;
+  width: 84%;
+  height: 40px;
+  margin: 0 auto;
+  float: left;
+  position: relative;
+  left: 8%;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.phone-footer ul{
+  display: block;
+  width: 84%;
+  height: 60px;
+  margin: 0 auto;
+  float: left;
+  position: relative;
+  left: 8%;
+  border-radius: 5px;
+}
+
+.b3s{
+   background: url('../images/mobile_logo6.png') center no-repeat;
+   background-size: 300px auto;
+}
+
+.tz{
+   background: url('../images/mobile_logo9.png') center no-repeat;
+   background-size: 200px auto;
+}
+
+.bjia{
+   background: url('../images/mobile_logo7.png') center no-repeat;
+   display: block;
+   width: 84%;
+   height: 30px;
+   margin: 0 auto;
+   float: left;
+   position: relative;
+   left: 8%;
+   background-size: contain;
+   border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+.bdxy{
+    background: url('../images/mobile_logo8.png') center no-repeat;
+    display: block;
+    width: 84%;
+    height: 60px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    left: 8%;
+    background-size: auto 40px;
+    border-radius: 5px;
+}
+
+.share span {
+  width: 48px;
+  height: 48px;
+  display: block;
+  background: url('../images/sprite.png') no-repeat;
+  margin: 5px 0;
+}
+
+.phone-share{
+  float: left;
+  clear: left;
+  width: 80%;
+  padding: 20px 10%;
+  background-color: #fafafa;
+}
+
+.phone-share .share {
+  display: inline-block;
+  margin: 3px;
+}
+
+.phone-share span{
+    color: #999999;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.share_title {
+  display: inline-block;
+  height: 62px;
+  color: #999999;
+  font-size: 16px;
+  line-height: 62px;
+}
+
+.btn-shares{
+    float:right
+}
+
+.weixin-2{
+    width:100%;
+    float: left;
+    background-color: #fafafa;
+}
+.weixin{
+  width: 190px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+.m3-bg4{
+  width: 100%;
+  height: 210px;
+  position: absolute;
+  background: url('../images/mobile_bg6.png') center top no-repeat;
+  background-size: 100%;
+}
+
+.m3-bg5{
+    width: 100%;
+    height: 210px;
+    position: absolute;
+    background: url('../images/mobile_bg7.png') center top no-repeat;
+    background-size: 100%;
+}
