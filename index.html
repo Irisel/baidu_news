@@ -22,17 +22,35 @@
         })();
     </script>
     <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.lazyload.min.js"></script>
+    <script src="js/lib/require.js" defer data-main="js/require-main.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
    <div class="hd">
         <div class="hd-main clearfix">
-            <a class="left" href="" target="_blank" ><img src="images/logo.png" /></a>
             <ul class="left hd-nav clearfix">
-                <li><a href="">活动介绍</a></li>
-                <li><a href="">比赛规则</a></li>
+                <li id="activity"><a>活动介绍</a></li>
+                <li id="rules"><a>比赛规则</a></li>
+                <li id="players"><a>选手名单</a></li>
+                <li id="partners"><a>合作伙伴</a></li>
             </ul>
-            <a class="right" href="" target="_blank" ><img src="images/logo2.png" /></a>
+            <div class="phone-panel">
+                <div class="phone-trigger">
+                </div>
+                <div class="panel-select">
+                    <ul class="ul-panel">
+                        <li id="phone_activity"><a>活动介绍</a></li>
+                        <hr>
+                        <li id="phone_rules"><a>比赛规则</a></li>
+                        <hr>
+                        <li id="phone_players"><a>选手名单</a></li>
+                        <hr>
+                        <li id="phone_partners"><a>合作伙伴</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
    </div>
 
@@ -42,20 +60,23 @@
         </div>
         <div class="main1">
             <div class="m1-content">
-                <p>参加百度新闻联合36氪、新浪创业举办的“奇点大学中国区学员选拔大赛”，你将有机会前往硅谷，与来自世界其他地区的79位精英一起，期望借科技之力影响10亿人的生活。</p>
+                <p>报名参加由百度新闻、36氪、新浪创业联合举办的“奇点大学中国区学员选拔大赛”，你将有机会前往硅谷，与来自世界其他地区的79位精英一起，借科技之力影响10亿人的生活。</p>
                 <a href="http://www.mikecrm.com/f.php?t=uUObAO" class="m1-apply"></a>
             </div>
+            <!--div style="position:absolute;top:300px">
+              <embed src="http://player.video.qiyi.com/ffc8471cdfade3bd7160ea4dc6157cb1/0/0/v_19rrnqpq7w.swf-albumId=367309200-tvId=367309200-isPurchase=0-cnId=25" allowFullScreen="true" quality="high" width="480" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            </div-->
             <div class="m1-logo"></div>
         </div>
-        <div class="main2">
+        <div class="main2" id="main2">
             <h2 class="m2-h2">奇点大学·影响10亿人</h2>
             <p class="m2-p">奇点大学（Singularity University）被称为未来学院，是由Google、美国国家太空总署（NASA）以及精英科技界专家联合建立的一所新型大学，旨在解决人类面临的重大挑战。<br/>
             为此，奇点大学每年从全世界四千多位竞争者中挑选80位学员，到美国硅谷参加10周GSP课程（Graduate Studies Program），借由极具启发性的思辨过程，激发参与者创造出影响10亿人生活的提案。</p>
-            <a href="http://singularityu.org/graduate-studies-program/" class="m2-btn"></a>
+            <a href="http://www.iqiyi.com/v_19rrnqqhi4.html" class="m2-btn"></a>
         </div>
-        <div class="main3">
+        <div class="main3" id="main3">
             <div class="m3-top">比赛规则</div>
-            <div class="m3-bg4"></div>
+            <div class="m3-bg4" ></div>
             <div class="m3-bg5"></div>
             <table class="m3-tab">
                 <tr>
@@ -64,7 +85,7 @@
                    </td>
                    <td class="indent-p">
                         <p>• 入学当天须年满21岁</p>
-                        <p>• 有一个通过科技影响10亿人的创业项目</p>
+                        <p>• 有一个希望通过科技影响10亿人的创业项目</p>
                         <p>• 英语沟通无障碍</p>
                         <p>• 能全程参加奇点大学为期 10 周 的GSP 课程，时间为6月中旬到8月底</p>
                    </td>
@@ -119,50 +140,113 @@
                 </tr>
             </table>
         </div>
+       <div class="main5">
+           <div class="m5-top">参赛选手</div>
+           <div class="m5-trigger">
+               <ul>
+                   <li class="js-player-trigger active" data-no="players0"><a>1-30</a></li>
+                   <li class="js-player-trigger" data-no="players1"><a>30-60</a></li>
+               </ul>
+           </div>
+           <div class="m5-player">
+               <table id="player0">
+                   <tbody>
+                       <tr>
+                          <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                           <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                           <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                           <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                            <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                            <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                   </tbody>
+               </table>
+               <table id="player1">
+                   <tbody>
+                       <tr>
+                          <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                           <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                           <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                           <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                            <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                       <tr>
+                            <td></td><td></td><td></td><td></td><td></td>
+                       </tr>
+                   </tbody>
+               </table>
+           </div>
+       </div>
    </div>
-   <div class="footer">
+   <div class="footer" id="main4">
         <div class="ft ft-logo1 clearfix">
-            <a href="" class="ft1" target="_blank" title="百度新闻"></a>
-            <a href="" class="ft2" target="_blank" title="36K"></a>
-            <a href="" class="ft3" target="_blank" title="新浪创业"></a>
+            <a  class="ft1"  title="百度新闻"></a>
+            <a  class="ft2"  title="36K"></a>
+            <a  class="ft3"  title="新浪创业"></a>
         </div>
         <div class="ft ft-logo2 clearfix">
-            <a href="" class="ft4" target="_blank" title="中关村创业大街"></a>
-            <a href="" class="ft5" target="_blank" title="ac天使汇"></a>
+            <a  class="ft4"></a>
+            <a  class="ft5"></a>
         </div>
         <div class="ft ft-logo3 clearfix">
-            <a href="" class="ft6" target="_blank" title="百度校园"></a>
+            <a  class="ft6"></a>
+        </div>
+        <div class="ft ft-logo11 clearfix">
+            <a  class="ft6"></a>
+        </div>
+        <div class="ft ft-logo12 clearfix">
+            <a  class="ft6"></a>
         </div>
         <div class="ft ft-logo4 clearfix">
-            <a href="" class="ft7" target="_blank" title="首都互联网协会"></a>
+            <a  class="ft7"  title="首都互联网协会"></a>
         </div>
    </div>
    <div class="phone-footer">
         <div class="phone-title">主办方</div>
         <ul class="b3s">
             <li>
-                <a href="" class="ft1" target="_blank" title="百度新闻"></a>
+                <a  class="ft1"  title="百度新闻"></a>
             </li>
             <li>
-                <a href="" class="ft2" target="_blank" title="36K"></a>
+                <a  class="ft2"  title="36K"></a>
             </li>
             <li>
-                <a href="" class="ft3" target="_blank" title="新浪创业"></a>
+                <a  class="ft3"  title="新浪创业"></a>
             </li>
         </ul>
         <div class="phone-title">战略合作</div>
         <ul class="tz">
             <li>
-                <a href="" class="ft5" target="_blank" title="中关村创业大街"></a>
+                <a  class="ft5"  title="中关村创业大街"></a>
             </li>
             <li>
-                <a href="" class="ft6" target="_blank" title="天使汇"></a>
+                <a  class="ft6"  title="天使汇"></a>
             </li>
         </ul>
         <div class="phone-title">合作伙伴</div>
-        <div class="bdxy"><a href="" class="ft4" target="_blank" title="百度校园"></a></div>
+        <div class="bdxy"><a  class="ft4"></a></div>
+        <div class="tech2"><a  class="ft4"></a></div>
+        <div class="haoqi"><a  class="ft4"></a></div>
         <div class="phone-title">指导单位</div>
-        <div class="bjia"><a href="" class="ft4" target="_blank" title="首都互联网协会"></a></div>
+        <div class="bjia"><a  class="ft4"  title="首都互联网协会"></a></div>
 
         <div class="phone-share">
             <div class="share_title">分享</div>
@@ -181,7 +265,7 @@
                 </div>
             </div>
         </div>
-        <div class="weixin-2"><img src="images/weixin.png" class="weixin"></div>
+        <div class="weixin-2"><a href="http://app.news.baidu.com/install.htm?src=qidiandaxue"><img src="images/weixin.png" class="weixin"></a></div>
    </div>
    <div class="qr">
        <div class="share_list">

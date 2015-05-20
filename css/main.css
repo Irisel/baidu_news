@@ -1,4 +1,4 @@
-body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans GB','Microsoft YaHei',Tahoma,Arial,'\5b8b\4f53',sans-serif;font-size:75%;line-height:1.5}body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,form,fieldset,input,textarea,button,select,pre,blockquote,hr{margin:0}fieldset,legend,button,ul,ol{padding:0}a{text-decoration:none}ul,ol{list-style:none}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}img{border:none}
+body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Microsoft YaHei',Tahoma,Arial,'\5b8b\4f53',sans-serif;font-size:75%;line-height:1.5}body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,form,fieldset,input,textarea,button,select,pre,blockquote,hr{margin:0}fieldset,legend,button,ul,ol{padding:0}a{text-decoration:none}ul,ol{list-style:none}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}img{border:none}
 .left{
 	float: left;
 }
@@ -6,39 +6,49 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 	float: right;
 }
 
-@font-face {
-	font-family: 'fzzt';
-	src: url('../fonts/ttf/FZLTHJW.TTF');
-   }
-
-
 
 /*@media only screen and (min-width: 1024px){*/
 
 .hd{
-	height: 60px;
-	border-top: 1px solid #cccccc;
-	border-bottom: 1px solid #cccccc;
-    display:none
+    height: 60px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    position: fixed;
+    top: 0;
+    z-index: 700;
+    width: 100%;
+    background-color: #ffffff;
 }
-.hd-main{
-	width: 1000px;
-	margin:0 auto;
+
+.phone-panel{
     display:none;
 }
-.hd-nav{
-	margin: 17px 0 0 35px;
+
+
+.hd-main{
+    width: 862px;
+    margin: 0 auto;
 }
+.hd-nav{
+    margin: 17px 0 0 35px;
+    float: right;
+}
+
 .hd-nav li{
-	float: left;
-	text-align: center;
-	width: 105px;
-	line-height: 40px;
+   float: left;
+   text-align: right;
+   width: 105px;
+   line-height: 40px;
 }
 .hd-nav li a{
 	font-size: 16px;
-	color: #5c5c5c;
+	/*color: #5c5c5c;*/
+    color: #9d9d9d;
+    cursor: pointer
+}
 
+.hd-nav li a:hover , .active_zone, .active_zone a{
+    color: #5c5c5c !important;
 }
 
 .sense{
@@ -50,23 +60,25 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 }
 .main0{
     width: 100%;
-    overflow:hidden;
-    height:380px;
+    overflow: hidden;
+    height: 380px;
     position: absolute;
+    margin-top: 62px;
 }
 .main1{
-	height: 871px;
-	width: 100%;
-	background: url(../images/bg1.jpg) center center no-repeat;
-	overflow: hidden;
+    height: 933px;
+    width: 100%;
+    background: url(../images/bg1.jpg) center center no-repeat;
+    overflow: hidden;
+    background-position: 0 62px;
 }
 .m1-content{
-	width: 790px;
-	height: 790px;
-	margin: 12px auto 0;
-	overflow: hidden;
-	background: url(../images/10.png) center center no-repeat;
-	position: relative;
+    width: 790px;
+    height: 790px;
+    margin: 74px auto 0;
+    overflow: hidden;
+    background: url(../images/10.png) center center no-repeat;
+    position: relative;
 }
 .m1-content p{
 	line-height: 30px;
@@ -118,11 +130,11 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 	background: url(../images/btn1.png) 0 0 no-repeat;
 }
 .main3{
-   height: 1224px;
-   width: 100%;
-   background: url(../images/bg3.png) top center no-repeat;
-   overflow: hidden;
-   background-size: auto 100%;
+    height: 1224px;
+    width: 100%;
+    overflow: hidden;
+    background-size: auto 100%;
+    background-color: #fafafa;
 }
 .m3-top{
 	color: #333;
@@ -180,6 +192,16 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 .ft-logo3{
     height: 144px;
     background: url(../images/logo7.png) center center no-repeat;
+}
+
+.ft-logo11{
+    height: 144px;
+    background: url(../images/logo11.png) center center no-repeat;
+}
+
+.ft-logo12{
+    height: 144px;
+    background: url(../images/logo12.png) center center no-repeat;
 }
 
 .ft-logo4{
@@ -303,15 +325,133 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
   height: 530px;
   position: absolute;
   left: 22%;
-  top: 1246px;
+  top: 1308px;
 }
 
 .m3-bg5{
   background: url('../images/main3_bg5.png') top center no-repeat;
   background-size: contain;
   width: 40%;
-  height: 30%;
+  height: 164px;
   position: absolute;
-  top: 2358px;
+  top: 2420px;
   left: 33%;
 }
+
+.main5{
+  width: 100%;
+  overflow: hidden;
+  height: 2357px;
+}
+
+
+.m5-top{
+  color: #333;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.m5-trigger {
+  width: 214px;
+  height: 40px;
+  margin: 12px auto;
+}
+
+.m5-trigger ul li{
+  width: 96px;
+  font-size: 18px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.m5-trigger ul li:first-child{
+ margin-right:10px;
+}
+
+/*.m5-trigger ul li:last-child{*/
+  /*float: right;*/
+/*}*/
+
+.m5-trigger ul{
+  list-style: none;
+  padding: 6px 0 6px 0;
+  color: #adadad;
+  display: block;
+}
+
+.m5-trigger ul .active{
+    background-color: #7d7c7c;
+    color: #ffffff
+}
+
+.m5-player{
+    width:1020px;
+    margin: 10px auto 0;
+    height: 2170px;
+    overflow: hidden;
+}
+
+.m5-player table{
+    display: block;
+    width: 1000px;
+    width: 1000px;
+    margin: 0 auto;
+    position:absolute
+}
+
+.m5-player tr{
+    display:block;
+}
+
+.m5-player td{
+  display: inline-block;
+  width: 194.4px;
+  height: 357px;
+  margin: 1px;
+}
+
+
+.m5-player .player-head img{
+    width:100%;
+    height:100%
+}
+
+.m5-player .player-name {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #588cd7
+}
+
+.m5-player .player-title{
+  text-align: center;
+  min-height: 18px;
+}
+
+.m5-player .player-p {
+  margin: 10px 36px 0 36px;
+  color: #999999;
+}
+
+.m5-player .player-title span{
+  display: block;
+  height: 18px;
+  line-height: 18px;
+}
+
+.m5-player .player-head {
+  height: 152px;
+  width: 152px;
+  margin: 6px auto 0;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 76px;
+}
+

@@ -9,7 +9,81 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 
 .hd{
-    display: none;
+    width: 100%;
+    position:fixed;
+    z-index: 500;
+}
+
+.hd-main .hd-nav{
+    display:none;
+}
+
+.phone-panel {
+    width: 62px;
+    height: 38px;
+    float: right;
+}
+
+.ul-panel {
+  height: 145px;
+  position: absolute;
+  bottom: 5px;
+  display: block;
+  width: 100%;
+}
+
+.ul-panel li{
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+}
+
+.ul-panel li a{
+    margin-left:30px;
+    color: #ffffff;
+}
+
+.panel-select{
+    display:none;
+    background: url('../images/phone_panel.png') center center no-repeat;
+    background-size: contain;
+}
+
+.phone-trigger{
+  position: relative;
+  width: 31px;
+  height: 24px;
+  background: url('../images/panel_select.png') center center no-repeat;
+  background-size: contain;
+  margin: 7px auto;
+}
+
+.phone-panel .panel-select{
+  width: 170px;
+  height: 162px;
+  border-radius: 10px;
+  position: relative;
+  left: -110px;
+}
+
+.ul-panel hr{
+  height: 1px;
+  border: none;
+  border-top: 1px solid #6e6e6e;
+  width: 97%;
+  margin: 0 auto;
+}
+
+.ul-panel .active_zone a{
+    color: #292828 !important;
+}
+
+.hd-main{
+    width: 98%;
+    margin: 0 auto;
+    z-index: 400;
+    background-color: #ffffff;
+    border-bottom: 1px solid #c6c6c6;
 }
 
 .main0{
@@ -22,6 +96,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 	width: 100%;
 	background: url(../images/bg1.jpg) center center no-repeat;
 	overflow: hidden;
+    z-index: 300px;
 }
 
 .m1-content{
@@ -260,7 +335,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 }
 
 .bdxy{
-    background: url('../images/mobile_logo8.png') center no-repeat;
+    background: url('../images/mobile_logo12.png') center no-repeat;
     display: block;
     width: 84%;
     height: 60px;
@@ -268,7 +343,32 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
     float: left;
     position: relative;
     left: 8%;
-    background-size: auto 40px;
+    background-size: 100% auto;
+    border-radius: 5px;
+}
+.tech2{
+    background: url('../images/logo11.png') center no-repeat;
+    display: block;
+    width: 84%;
+    height: 60px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    left: 8%;
+    background-size: 100% auto;
+    border-radius: 5px;
+}
+
+.haoqi{
+    background: url('../images/logo12.png') center no-repeat;
+    display: block;
+    width: 84%;
+    height: 60px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    left: 8%;
+    background-size: 100% auto;
     border-radius: 5px;
 }
 
@@ -337,4 +437,15 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
     position: absolute;
     background: url('../images/mobile_bg7.png') center top no-repeat;
     background-size: 100%;
+}
+
+
+.ft-logo11{
+    height: 144px;
+    background: url(../images/logo12.png) center center no-repeat;
+}
+
+.ft-logo4{
+    height: 144px;
+    background: url(../images/logo8.png) center center no-repeat;
 }

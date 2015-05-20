@@ -1,9 +1,7 @@
 $(function(){
-
         $('.share').click(function(e){
             $('.jiathis_button_' + $(e.target).data('share')).click();
         });
-
         var system ={
                 win : false,
                 mac : false,
@@ -18,6 +16,13 @@ $(function(){
             var main3 = $(".main3");
             $('.m3-bg4').css({'top': (main3.offset().top - 52) + 'px'});
             $('.m3-bg5').css({'top': (main3.offset().top + main3.height()) -210 + 'px'});
+            require(['phone'], function (phone){
+                phone.phone_init();
+            });
+        }else{
+            require(['pc'], function (pc){
+                pc.pc_init();
+            })
         }
 
 });
