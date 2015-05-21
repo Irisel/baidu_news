@@ -11,17 +11,14 @@ $(function(){
         system.win = p.indexOf("Win") == 0;
         system.mac = p.indexOf("Mac") == 0;
         system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-//        if(!(system.win||system.mac||system.xll)){
-            require(['lib/zepto'], function(zepto){
-
-            })
-            require(['phone'], function (phone){
+        if(!(system.win||system.mac||system.xll)){
+            require(['lib/zepto', 'phone'], function (zepto, phone){
                 phone.phone_init();
             });
-//        }else{
-//            require(['pc'], function (pc){
-//                pc.pc_init();
-//            })
-//        }
+        }else{
+            require(['pc'], function (pc){
+                pc.pc_init();
+            })
+        }
 
 });

@@ -20,7 +20,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .phone-panel {
     width: 62px;
-    height: 38px;
+    height: 40px;
     float: right;
 }
 
@@ -55,7 +55,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
   height: 24px;
   background: url('../images/panel_select.png') center center no-repeat;
   background-size: contain;
-  margin: 7px auto;
+  margin: 8px auto;
 }
 
 .phone-panel .panel-select{
@@ -172,9 +172,8 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .main3{
   width: 100%;
-  background: url(../images/mobile_bg3.png) center center no-repeat;
+  background-color: #fafafa;
   overflow: hidden;
-  background-size: 1676px 100%;
 }
 
 .m3-top{
@@ -467,13 +466,14 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .player-foot{
   width: 100%;
-  height: 12%;
+  height: 5%;
 }
 
 .player-body{
   width: 100%;
   height: 75%;
   position: relative;
+  margin-bottom: 7%;
 }
 
 .player-list{

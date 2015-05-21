@@ -341,7 +341,6 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 .main5{
   width: 100%;
   overflow: hidden;
-  height: 2357px;
 }
 
 
@@ -389,29 +388,28 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 .m5-player{
-    width:1020px;
+    width:1120px;
     margin: 10px auto 0;
-    height: 2170px;
     overflow: hidden;
 }
 
 .m5-player table{
     display: block;
-    width: 1000px;
-    width: 1000px;
+    width: 1120px;
     margin: 0 auto;
     position:absolute
 }
 
 .m5-player tr{
     display:block;
+    min-height:  277px;
 }
 
 .m5-player td{
   display: inline-block;
-  width: 194.4px;
-  height: 357px;
+  width: 219px;
   margin: 1px;
+  float:left;
 }
 
 
@@ -455,3 +453,6 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   border-radius: 76px;
 }
 
+.phone-main5{
+    display:none;
+}
