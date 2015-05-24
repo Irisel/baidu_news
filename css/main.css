@@ -105,7 +105,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 	width: 100%;
 	background: url(../images/bg2.png) center center no-repeat;
 	overflow: hidden;
-	margin:2px 0 3px;
+	margin: 2px 0 0;
 }
 .m2-h2{
 	font-size: 30px;
@@ -277,7 +277,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
     position: fixed;
     right: 5%;
     top: 60%;
-    z-index: 9;
+    z-index: 707;
 }
 
 .jiathis_share_32x32, .phone-footer {
@@ -325,7 +325,6 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   height: 530px;
   position: absolute;
   left: 22%;
-  top: 1308px;
 }
 
 .m3-bg5{
@@ -334,13 +333,13 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   width: 40%;
   height: 164px;
   position: absolute;
-  top: 2420px;
   left: 33%;
 }
 
 .main5{
   width: 100%;
   overflow: hidden;
+  background-color: #fafafa;
 }
 
 
@@ -418,7 +417,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
     height:100%
 }
 
-.m5-player .player-name {
+.m5-player .player-name,  .m7-player .player-name{
     display: block;
     text-align: center;
     margin: 20px;
@@ -428,23 +427,23 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
     color: #588cd7
 }
 
-.m5-player .player-title{
+.m5-player .player-title, .m7-player .player-title{
   text-align: center;
   min-height: 18px;
 }
 
-.m5-player .player-p {
+.m5-player .player-p, .m7-player .player-p {
   margin: 10px 36px 0 36px;
   color: #999999;
 }
 
-.m5-player .player-title span{
+.m5-player .player-title span, .m7-player .player-title span{
   display: block;
   height: 18px;
   line-height: 18px;
 }
 
-.m5-player .player-head {
+.m5-player .player-head, .m7-player .player-head {
   height: 152px;
   width: 152px;
   margin: 6px auto 0;
@@ -454,5 +453,233 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 .phone-main5{
+    display:none;
+}
+
+.luyan{
+    background: url('../images/players/luyan.png') center center no-repeat;
+    background-size:contain;
+    display:block;
+    height:19px;
+    width: 80px;
+    position:relative;
+    margin:0 auto;
+}
+
+.luyan-div{
+    margin-top:10px;
+}
+
+.main6 {
+  height: 760px;
+  width: 100%;
+  background-color: #fafafa;
+  padding-top: 40px;
+}
+
+.m6-inner{
+  width: 1120px;
+  margin: 30px auto 0;
+  height: 610px;
+}
+
+.main6 .embed-body{
+  width: 837px;
+  float: left;
+  display: inline-block;
+  height: 610px;
+}
+
+.main6 .embed-panel{
+  float: left;
+  height: 610px;
+  width: 283px;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main6 .embed-panel .active{
+  background-color: #ed3011 !important;
+  color: #ffffff !important;
+}
+
+.main6 .embed-panel .active .current span{
+    display: block !important;
+}
+
+.main6 .embed-panel .current{
+  width: 47.79px;
+  display: inline-block;
+  text-align: right;
+  height: 40px;
+  float: left;
+  clear: left;
+}
+
+.main6 .embed-panel .current span{
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.main6 .embed-panel .text span{
+  display: block;
+  height: 40px;
+  margin: 8px 0;
+  line-height: 40px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.main6 .embed-panel .text{
+  width: 235px;
+  display: inline-block;
+}
+
+.main6 .embed-panel .btn{
+  width:100%;
+  height: 54.5px;
+  border-bottom: 1px solid #ffffff;
+  background-color: #f2f2f3;
+  color: #484848;
+}
+
+.main7{
+  height: 660px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.m6-top{
+  color: #333;
+  text-align: center;
+  font-size: 30px;
+}
+
+.m7-top{
+  color: #333;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.m7-player {
+  width: 1120px;
+  margin: 30px auto 0;
+  overflow: hidden;
+}
+
+.m7-player table {
+  display: block;
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.m5-player tr {
+  display: block;
+  min-height: 277px;
+}
+
+.m7-player td {
+  display: inline-block;
+  width: 368px;
+  margin: 1px;
+  float: left;
+}
+
+#liqian{
+  position: relative;
+  left: 371px;
+  top: -150px;
+}
+
+.m7-player .player-head{
+  height: 200px;
+  width: 368px;
+  margin: 6px auto 0;
+  overflow: hidden;
+}
+
+.m7-player .player-p{
+  width: 190px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.m7-player .player{
+  margin: 0 auto;
+  display: block;
+}
+
+.main8{
+  height: 660px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main8-inner{
+  width: 1045px;
+  margin: 10px auto;
+  height: 518px;
+}
+
+.slidesjs-pagination, .slidesjs-stop, .slidesjs-play{
+    display:none !important;
+}
+
+.slidesjs-previous{
+   background: url('../images/luyan/previous.png') center center no-repeat;
+   height: 60px;
+   width: 60px;
+   display: block;
+   background-size: contain;
+   position: relative;
+   left: -80px;
+   top: -245px;
+   float:left;
+   z-index: 711;
+}
+
+.slidesjs-next{
+  background: url('../images/luyan/next.png') center center no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background-size: contain;
+  float: right;
+  right: -80px;
+  position: relative;
+  top: -245px;
+  z-index: 711;
+}
+
+#slides {
+    overflow: visible !important;
+}
+
+.main8-title{
+  width: 880px;
+  margin: 0 auto;
+  padding: 37px 0;
+}
+
+.luyan-title{
+  background: url('../images/luyan/luyan.png') center center no-repeat;
+  background-size: contain;
+  width:145px;
+  height:34px;
+  margin: 0 auto;
+}
+
+.luyan-title span{
+  display: none;
+}
+
+.phone-main7{
     display:none;
 }

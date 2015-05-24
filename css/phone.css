@@ -511,25 +511,29 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 .player-title {
   font-size: 14px;
   text-align: center;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
-.player-p{
-  width: 80%;
+
+.player-p {
+  width: 85%;
   margin: 0 auto;
   color: #999999;
   font-size: 10px;
+  line-height: 15px;
 }
 
-.page-point{
-  width: 10px;
-  height: 10px;
+
+.page-point {
+  width: 8px;
+  height: 8px;
   background-color: #e5e5e5;
   display: inline-block;
   border: 1px solid transparent;
-  border-radius: 6px;
-  margin: auto 5px;
+  border-radius: 5px;
+  margin: auto 3px;
 }
+
 
 .point-pages{
   position: relative;
@@ -538,4 +542,172 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .phone-main5 .active{
     background-color: #ee4327
+}
+
+.luyan{
+    background: url('../images/players/luyan.png') center center no-repeat;
+    background-size:contain;
+    display:block;
+    position:relative;
+    margin:0 auto;
+    height:20px;
+    width:74px;
+}
+
+.luyan-div{
+    margin:5px 0
+}
+
+.main8{
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main8-inner{
+  width: 80%;
+  margin: 0 auto;
+  height: 200px;
+
+}
+
+#slides {
+    overflow: visible !important;
+}
+
+.slidesjs-pagination, .slidesjs-stop, .slidesjs-play{
+    display:none !important;
+}
+
+
+.slidesjs-previous{
+  background: url('../images/luyan/previous.png') left center no-repeat;
+  height: 40px;
+  width: 40px;
+  display: block;
+  background-size: contain;
+  float:left;
+  position: relative;
+  left: -10%;
+}
+
+.slidesjs-next{
+    background: url('../images/luyan/next.png') right center no-repeat;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-size: contain;
+    float:right;
+    position: relative;
+    right: -10%;
+}
+
+.main8-title{
+  width: 80%;
+  margin: 0 auto;
+  padding: 22px 0 17px 0;
+}
+
+.luyan-title{
+  width:80%;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+.slidesjs-container, .slidesjs-control{
+    height: 200px !important;
+}
+
+.main7{
+    display:none;
+}
+
+#phone-player2 {
+    width:100%
+}
+
+#phone-player2 tbody{
+    width:100%
+}
+
+#phone-player2 td{
+    width:50%
+}
+
+#phone-player2 .player{
+    width:100%;
+    height:100%;
+    float:none;
+}
+
+#phone-player2 .player-img{
+    width:100px;
+    height:100px;
+    display: block;
+    margin:0 auto;
+}
+
+#phone-player2 .player-head{
+    height: 100px;
+}
+
+.m6-top{
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  height: 24px;
+  margin: 5% auto 0;
+  line-height: 24px;
+}
+
+.m6-inner{
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+.embed-panel .btn{
+  display: inline-block;
+  float: left;
+  border-bottom: 1px solid #ffffff;
+  background-color: #f2f2f2;
+  color: #484848;
+  margin: 4px 8px 4px 0;
+  height: 20px;
+}
+
+.embed-panel .btn .current{
+    float:left;
+    height: 100%;
+    width:10px;
+}
+
+.embed-panel .btn .text{
+    float:left;
+}
+
+.embed-panel{
+  width: 100%;
+  min-height: 240px;
+}
+
+.feature{
+    width:100%;
+}
+
+.feature .current{
+    width:48% !important;
+}
+
+.embed-panel .active{
+  background-color: #ed3011 !important;
+  color: #ffffff !important;
+}
+
+.main6 .embed-panel .active .current span{
+    display: block !important;
+}
+
+.main6 .embed-panel .current span{
+  display: none;
+  text-align: right;
 }
