@@ -10,13 +10,12 @@ define(function(){
         var zepto = window.Zepto;
         var screen_height = $('.main0').height();
         var screen_width = $('.main0').width();
-
+        function iOS() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+        }
         $('.main1').height(screen_height);
         $('.phone-main5').height(screen_height);
 
-        var main3 = $(".main3");
-        $('.m3-bg4').css({'top': (main3.offset().top -10) + 'px'});
-        $('.m3-bg5').css({'top': (main3.offset().top + main3.height()) -165 + 'px'});
         var selected_zone = undefined;
         var panel_isopen = false;
         $('.phone-trigger').click(function(){
@@ -42,6 +41,27 @@ define(function(){
             var main2 = $('#main2').offset().top;
 		    $.scrollTo(main2, 500);
 	    });
+
+        $("#phone_vidoes").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var main6 = $('.main6').offset().top;
+		    $.scrollTo(main6 - 50, 500);
+        });
+
+         $("#phone_final").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var main7 = $('.phone-main7').offset().top;
+		    $.scrollTo(main7 - 50, 500);
+        });
+
+        $("#phone_luyan").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var main8 = $('.main8').offset().top;
+		    $.scrollTo(main8 - 50, 500);
+        });
 
 	    $("#phone_rules").click(function(){
             var _this = this;
@@ -451,7 +471,7 @@ define(function(){
                 title: '星谷实验室',
 //                size: 2,
                 luyan: 'http://www.iqiyi.com/v_19rrnq5ttw.html?list=19rro8l2gi',
-                par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍。有三点重要优势：1、功率密度（每公斤重量电机能够产生的功率）能做到2.5~4KW/KG，国内一线电机水平是0.8KW/KG，特斯拉汽车采用的富田电机是1.6KW/KG。2、星谷电机效率高，能做到96%~97.5%，市场上主流水平是82%~94%。3、成本低。星谷电机成本比传统感应电机低10%~30%。电机企业毛利润5%左右，如果节约10%的成本，企业利润就提升3倍。'},
+                par: '星谷实验室的摘要 改短：星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
             {                id: 35,
                 img: 'liutao.png',
                 name: '刘涛',
@@ -461,7 +481,7 @@ define(function(){
         ];
 
         function html_pdg(info){
-            var img = info.img?('<div class="player-head"><img class="player-img" src="images/players/' + info.img + '"></div>'):'';
+            var img = info.img?('<div class="player-head"><img class="player-img lazy" data-original="images/players/' + info.img + '"></div>'):'';
             var style=info.size?('style="width:' + 50 * info.size + '%"' ):'';
             var luyan = info.luyan?('<div class="luyan-div"><a class="luyan" href="' + info.luyan +'"></a></div>'):'<div class="luyan-div"></div>';
              return   '<div class="player"'+ style +'>' + img +'<span class="player-name">'+ info.name +'</span><div class="player-title"><span>'+
@@ -531,26 +551,44 @@ define(function(){
 
         zepto(".phone-main5").on("swipeLeft", left_scroll);
         zepto(".phone-main5").on("swipeRight", right_scroll);
-
-         $('#slides').slidesjs({
+        console.log($('#phone-slides'));
+         $('#phone-slides').slidesjs({
             width: 240,
             height: 200,
             play: {
                 active: true,
                 auto: true,
-                interval: 4000,
+                interval: 10000,
                 swap: true
             }
          });
-         $('.slidesjs-navigation').css('top', (220 - $('.slidesjs-slide').height()/2) * (-1));
-         $('.embed-body').html('<embed src="http://player.video.qiyi.com/c6186978704430544546194b88379d45/0/0/v_19rrnqqhi4.swf-albumId=367462000-tvId=367462000-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="'+ screen_width * 0.9 +'" height="' + screen_width * 0.9 * 35/48 + '" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
-         $('.embed-panel .btn').click(function(){
-            if($(this).hasClass('active'))return false;
-            $('.embed-panel .active').removeClass('active');
-            $(this).addClass('active');
-            var embed = '<embed src="' + $(this).data('src') + '" allowFullScreen="true" quality="high" width="'+ screen_width * 0.9 +'" height="' + screen_width * 0.9 * 35/48 + '" height="' + screen_width * 0.9 * 35/48 + '" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>';
-            $('.embed-body').html(embed);
-        })
+         $('.slidesjs-navigation').css('top', (120 - $('.slidesjs-slide').height()/2) * (-1));
+         if(!iOS()){
+             $('.embed-body').html('<embed src="http://player.video.qiyi.com/c6186978704430544546194b88379d45/0/0/v_19rrnqqhi4.swf-albumId=367462000-tvId=367462000-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="'+ screen_width * 0.9 +'" height="' + screen_width * 0.9 * 35/48 + '" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
+             $('.embed-panel .btn').click(function(){
+                if($(this).hasClass('active'))return false;
+                $('.embed-panel .active').removeClass('active');
+                $(this).addClass('active');
+                var embed = '<embed src="' + $(this).data('src') + '" allowFullScreen="true" quality="high" width="'+ screen_width * 0.9 +'" height="' + screen_width * 0.9 * 35/48 + '" height="' + screen_width * 0.9 * 35/48 + '" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>';
+                $('.embed-body').html(embed);
+             })
+         }else{
+             $('.embed-body').html('<iframe height="'+ screen_width * 0.9 * 35/48 +'px;" width="'+ screen_width * 0.9 + 'px;" src="http://m.iqiyi.com/splay.html?tvid=367462000&amp;vid=c6186978704430544546194b88379d45" frameborder="0" allowfullscreen=""></iframe>');
+             $('.embed-panel .btn').click(function(){
+                if($(this).hasClass('active'))return false;
+                $('.embed-panel .active').removeClass('active');
+                $(this).addClass('active');
+                var embed = '<iframe height="'+ screen_width * 0.9 * 35/48 +'px;" width="'+ screen_width * 0.9 + 'px;" src="'+ $(this).data('ifc') +'" frameborder="0" allowfullscreen=""></iframe>';
+                $('.embed-body').html(embed);
+             })
+         }
+
+        var main3 = $(".main3");
+        $('.m3-bg4').css({'top': (main3.offset().top -45) + 'px'});
+        $('.m3-bg5').css({'top': (main3.offset().top + main3.height()) -215 + 'px'});
+        $('img.lazy').lazyload({
+            effect : "fadeIn"
+        });
     };
     return {
         phone_init: phone_init

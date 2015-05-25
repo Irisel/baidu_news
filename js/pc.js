@@ -26,6 +26,24 @@ define(function(){
             excahnge_zones(_this);
 		    $.scrollTo(rule_position - 40, 500);
 	    });
+        $("#luyan").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var video_position = $('.main8').offset().top;
+		    $.scrollTo(video_position - 40, 500);
+	    });
+        $("#final").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var video_position = $('.main7').offset().top;
+		    $.scrollTo(video_position - 80, 500);
+	    });
+        $("#videos").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var video_position = $('.main6').offset().top;
+		    $.scrollTo(video_position - 40, 500);
+	    });
 	    $("#players").click(function(){
             var _this = this;
             excahnge_zones(_this);
@@ -38,7 +56,7 @@ define(function(){
             $.scrollTo($('#main4').offset().top, 500);
 	    });
         function html_pdg(info){
-            var luyan = info.luyan?('<div class="luyan-div"><a class="luyan" href="' + info.luyan +'"></a></div>'):'';
+            var luyan = info.luyan?('<div class="luyan-div"><a class="luyan" target="_blank" href="' + info.luyan +'"></a></div>'):'';
             var img = info.img?('<div class="player-head"><img class="player" src="images/players/' + info.img + '"></div>'):'';
             return img + '<span class="player-name">'+ info.name +'</span><div class="player-title"><span>'+
                 info.title + '</span></div>' + luyan + '<p class="player-p">'+ info.par +'</p>';
@@ -237,7 +255,7 @@ define(function(){
                 title: '星谷实验室',
 //                size: 2,
                 luyan: 'http://www.iqiyi.com/v_19rrnq5ttw.html?list=19rro8l2gi',
-                par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍。有三点重要优势：1、功率密度（每公斤重量电机能够产生的功率）能做到2.5~4KW/KG，国内一线电机水平是0.8KW/KG，特斯拉汽车采用的富田电机是1.6KW/KG。2、星谷电机效率高，能做到96%~97.5%，市场上主流水平是82%~94%。3、成本低。星谷电机成本比传统感应电机低10%~30%。电机企业毛利润5%左右，如果节约10%的成本，企业利润就提升3倍。'},
+                par: '星谷实验室的摘要 改短：星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
               {                id: 16,
                 name: '伏英娜',
                 title: 'appMagics哈图',
@@ -405,7 +423,7 @@ define(function(){
                 title: '星谷实验室',
 //                size: 2,
                 luyan: 'http://www.iqiyi.com/v_19rrnq5ttw.html?list=19rro8l2gi',
-                par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍。有三点重要优势：1、功率密度（每公斤重量电机能够产生的功率）能做到2.5~4KW/KG，国内一线电机水平是0.8KW/KG，特斯拉汽车采用的富田电机是1.6KW/KG。2、星谷电机效率高，能做到96%~97.5%，市场上主流水平是82%~94%。3、成本低。星谷电机成本比传统感应电机低10%~30%。电机企业毛利润5%左右，如果节约10%的成本，企业利润就提升3倍。'},
+                par: '星谷实验室的摘要 改短：星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
              {                id: 40,
                 img: 'liqian.png',
                 name: '李浅',
@@ -425,12 +443,6 @@ define(function(){
                   $(list[i]).html(html_pdg(players[i]));
                   if(style)$(list[i]).css('width', style);
               }
-              if(!is_ie){
-                $(element + ' .player').lazyload({
-                    effect : "fadeIn"
-                });
-              }
-
         };
         $('.js-player-trigger').click(function(){
             var _this = $(this);
@@ -453,9 +465,9 @@ define(function(){
         inlit_players('#player2', players.players2);
 
         $('.main5').css('height',$('#player0').height() + 240);
-        $('.main7').css('height',$('#player2').height() + 40);
+        $('.main7').css('height',$('#player2').height() + 80);
         $('#player1').hide();
-
+        $('#slides').html('<img src="images/luyan/IMG_3205.jpg"><img src="images/luyan/IMG_3206.jpg"><img src="images/luyan/IMG_3253.jpg"><img src="images/luyan/IMG_3284.jpg"><img src="images/luyan/IMG_3315.jpg"><img src="images/luyan/IMG_3327.jpg"><img src="images/luyan/IMG_3349.jpg"><img src="images/luyan/IMG_3363.jpg"><img src="images/luyan/IMG_3418.jpg"><img src="images/luyan/IMG_3443.jpg"><img src="images/luyan/IMG_3451.jpg"><img src="images/luyan/IMG_3510.jpg"><img src="images/luyan/IMG_3532.jpg"><img src="images/luyan/IMG_3563.jpg"><img src="images/luyan/IMG_3568.jpg"><img src="images/luyan/IMG_3583.jpg"><img src="images/luyan/IMG_3676.jpg"><img src="images/luyan/IMG_3702.jpg"><img src="images/luyan/IMG_3775.jpg"><img src="images/luyan/IMG_3787.jpg"><img src="images/luyan/IMG_3814.jpg"><img src="images/luyan/IMG_3899.jpg"><img src="images/luyan/IMG_3925.jpg">')
         $('#slides').slidesjs({
              width: 1080,
             height: 528,

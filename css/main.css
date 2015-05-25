@@ -80,19 +80,30 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
     background: url(../images/10.png) center center no-repeat;
     position: relative;
 }
+
+.m1-content .title{
+    line-height: 30px;
+	width: 405px;
+	margin: 460px auto 0;
+	font-size: 25px;
+    text-align: center;
+}
+
 .m1-content p{
 	line-height: 30px;
 	width: 405px;
-	margin: 460px auto 0;
+	margin: 5px auto 0;
 	font-size: 15px;
 }
 .m1-apply{
 	width: 248px;
 	height: 74px;
 	position: absolute;
+    background: url('../images/mobile_apply.png') center center no-repeat;
+    background-size: contain;
 	display: block;
 	left: 275px;
-	top: 569px;
+	top: 599px;
 }
 .m1-logo{
 	width: 790px;
@@ -105,7 +116,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 	width: 100%;
 	background: url(../images/bg2.png) center center no-repeat;
 	overflow: hidden;
-	margin: 2px 0 0;
+	margin: 2px 0 20px;
 }
 .m2-h2{
 	font-size: 30px;
@@ -321,7 +332,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 .m3-bg4{
   background: url('../images/main3_bg4.png') center top no-repeat;
   background-size: 100% 54%;
-  width: 50%;
+  width: 935px;
   height: 530px;
   position: absolute;
   left: 22%;
@@ -586,7 +597,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 
 .m7-player td {
   display: inline-block;
-  width: 368px;
+  width: 219px;
   margin: 1px;
   float: left;
 }
@@ -599,7 +610,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 
 .m7-player .player-head{
   height: 200px;
-  width: 368px;
+  width: 219px;
   margin: 6px auto 0;
   overflow: hidden;
 }
@@ -669,17 +680,26 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 .luyan-title{
-  background: url('../images/luyan/luyan.png') center center no-repeat;
-  background-size: contain;
   width:145px;
   height:34px;
   margin: 0 auto;
 }
 
 .luyan-title span{
-  display: none;
+  color: #333;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .phone-main7{
     display:none;
+}
+
+#phone-slides{
+    display:none;
+}
+
+.phone{
+    display:none !important;
 }

@@ -27,15 +27,15 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 .ul-panel {
   height: 145px;
   position: absolute;
-  bottom: 5px;
+  bottom: 119px;
   display: block;
   width: 100%;
 }
 
 .ul-panel li{
-    height: 35px;
-    line-height: 35px;
-    font-size: 17px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 17px;
 }
 
 .ul-panel li a{
@@ -60,7 +60,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .phone-panel .panel-select{
   width: 170px;
-  height: 162px;
+  height: 285px;
   border-radius: 10px;
   position: relative;
   left: -110px;
@@ -110,11 +110,11 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .m1-content p{
   line-height: 22px;
-  width: 80%;
+  width: 282px;
   margin: 0px auto 0;
   font-size: 12px;
   position: relative;
-  top: 92%;
+  top: 85%;
   overflow: overlay;
   height: 20%;
   min-height: 88px;
@@ -122,10 +122,10 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 .m1-apply{
   width: 200px;
   height: 60px;
-  position: absolute;
+  position: relative;
   display: block;
-  left: 21.6%;
-  top: 119.5%;
+  top: 85.5%;
+  margin: 0 auto;
   background: url('../images/mobile_apply.png') center center no-repeat;
   background-size: contain;
 }
@@ -570,7 +570,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 }
 
-#slides {
+#phone-slides {
     overflow: visible !important;
 }
 
@@ -692,11 +692,27 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .feature{
     width:100%;
+    text-align: center;
 }
 
-.feature .current{
-    width:48% !important;
+.feature .text{
+    float:none;
+    margin:0 auto;
+    position:relative;
+    width:100%;
 }
+
+.feature .current-head{
+    float:none !important;
+    position:relative;
+    display:inline-block;
+    color: #f2f2f3;
+}
+
+.active .current-head{
+    color: #ffffff !important;
+}
+
 
 .embed-panel .active{
   background-color: #ed3011 !important;
@@ -710,4 +726,27 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 .main6 .embed-panel .current span{
   display: none;
   text-align: right;
+}
+
+#slides{
+    display: none;
+}
+
+#phone-slides{
+    display:none;
+}
+
+.pc{
+    display:none;
+}
+
+.m1-content .title{
+    line-height: 22px;
+    width: 80%;
+    margin: 0px auto 0;
+    font-size: 14px;
+    position: relative;
+    top: 74%;
+    height: 25px;
+    text-align: center;
 }
