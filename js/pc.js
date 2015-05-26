@@ -255,7 +255,7 @@ define(function(){
                 title: '星谷实验室',
 //                size: 2,
                 luyan: 'http://www.iqiyi.com/v_19rrnq5ttw.html?list=19rro8l2gi',
-                par: '星谷实验室的摘要 改短：星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
+                par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
               {                id: 16,
                 name: '伏英娜',
                 title: 'appMagics哈图',
@@ -423,7 +423,7 @@ define(function(){
                 title: '星谷实验室',
 //                size: 2,
                 luyan: 'http://www.iqiyi.com/v_19rrnq5ttw.html?list=19rro8l2gi',
-                par: '星谷实验室的摘要 改短：星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
+                par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
              {                id: 40,
                 img: 'liqian.png',
                 name: '李浅',
@@ -482,7 +482,7 @@ define(function(){
         rule_position = $('#main3').offset().top;
         $('.m3-bg4').css('top', rule_position);
         $('.m3-bg5').css('top', rule_position + 1107);
-        $('.embed-body').html('<embed src="http://player.video.qiyi.com/c6186978704430544546194b88379d45/0/0/v_19rrnqqhi4.swf-albumId=367462000-tvId=367462000-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="837" height="610" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
+        $('.embed-body').html('<embed src="http://player.video.qiyi.com/844f66c3696e217f44b8190b02556f4c/0/0/v_19rrnqfhdw.swf-albumId=369093800-tvId=369093800-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="837" height="610" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
         $('.embed-panel .btn').click(function(){
             if($(this).hasClass('active'))return false;
             $('.embed-panel .active').removeClass('active');

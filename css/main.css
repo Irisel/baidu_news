@@ -26,8 +26,10 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 
 
 .hd-main{
-    width: 862px;
-    margin: 0 auto;
+  width: 975px;
+  margin: 0 auto;
+  position: relative;
+  left: -54px;
 }
 .hd-nav{
     margin: 17px 0 0 35px;
@@ -702,4 +704,17 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 
 .phone{
     display:none !important;
+}
+
+.logo-qidian{
+  background: url('../images/logo_qidian.png') center center no-repeat;
+  background-size: contain;
+  height: 58px;
+  position: relative;
+  top: -17px;
+  width: 205px !important;
+}
+
+.phone-logo-qidian{
+    display:none;
 }

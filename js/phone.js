@@ -471,7 +471,7 @@ define(function(){
                 title: '星谷实验室',
 //                size: 2,
                 luyan: 'http://www.iqiyi.com/v_19rrnq5ttw.html?list=19rro8l2gi',
-                par: '星谷实验室的摘要 改短：星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
+                par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
             {                id: 35,
                 img: 'liutao.png',
                 name: '刘涛',
@@ -564,7 +564,7 @@ define(function(){
          });
          $('.slidesjs-navigation').css('top', (120 - $('.slidesjs-slide').height()/2) * (-1));
          if(!iOS()){
-             $('.embed-body').html('<embed src="http://player.video.qiyi.com/c6186978704430544546194b88379d45/0/0/v_19rrnqqhi4.swf-albumId=367462000-tvId=367462000-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="'+ screen_width * 0.9 +'" height="' + screen_width * 0.9 * 35/48 + '" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
+             $('.embed-body').html('<embed src="http://player.video.qiyi.com/844f66c3696e217f44b8190b02556f4c/0/0/v_19rrnqfhdw.swf-albumId=369093800-tvId=369093800-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="'+ screen_width * 0.9 +'" height="' + screen_width * 0.9 * 35/48 + '" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
              $('.embed-panel .btn').click(function(){
                 if($(this).hasClass('active'))return false;
                 $('.embed-panel .active').removeClass('active');
@@ -573,7 +573,7 @@ define(function(){
                 $('.embed-body').html(embed);
              })
          }else{
-             $('.embed-body').html('<iframe height="'+ screen_width * 0.9 * 35/48 +'px;" width="'+ screen_width * 0.9 + 'px;" src="http://m.iqiyi.com/splay.html?tvid=367462000&amp;vid=c6186978704430544546194b88379d45" frameborder="0" allowfullscreen=""></iframe>');
+             $('.embed-body').html('<iframe height="'+ screen_width * 0.9 * 35/48 +'px;" width="'+ screen_width * 0.9 + 'px;" src="http://m.iqiyi.com/splay.html?tvid=369093800&amp;vid=844f66c3696e217f44b8190b02556f4c" frameborder="0" allowfullscreen=""></iframe>');
              $('.embed-panel .btn').click(function(){
                 if($(this).hasClass('active'))return false;
                 $('.embed-panel .active').removeClass('active');

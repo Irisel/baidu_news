@@ -79,7 +79,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 }
 
 .hd-main{
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     z-index: 400;
     background-color: #ffffff;
@@ -120,8 +120,8 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
   min-height: 88px;
 }
 .m1-apply{
-  width: 200px;
-  height: 60px;
+  width: 185px;
+  height: 56px;
   position: relative;
   display: block;
   top: 85.5%;
@@ -749,4 +749,13 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
     top: 74%;
     height: 25px;
     text-align: center;
+}
+
+
+.phone-logo-qidian {
+  background: url('../images/logo_qidian.png') center center no-repeat;
+  background-size: contain;
+  float: left;
+  height: 40px;
+  width: 115px;
 }
