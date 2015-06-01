@@ -25,12 +25,13 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 
-.hd-main{
-  width: 975px;
+.hd-main {
+  width: 1290px;
   margin: 0 auto;
   position: relative;
-  left: -54px;
+  left: -213px;
 }
+
 .hd-nav{
     margin: 17px 0 0 35px;
     float: right;
@@ -222,6 +223,11 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
     background: url(../images/logo8.png) center center no-repeat;
 }
 
+.ft-logo14{
+   height: 144px;
+   background: url(../images/logo14.png) center center no-repeat;
+}
+
 .ft1{
   float: left;
   width: 114px;
@@ -283,6 +289,12 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   left: 430px;
 }
 
+.ft14{
+  display: block;
+  width: 250px;
+  height: 60px;
+  margin: 42px 0px 42px 340px;
+}
 .qr{
     width: 114px;
     height: 159px;
@@ -430,7 +442,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
     height:100%
 }
 
-.m5-player .player-name,  .m7-player .player-name{
+.m5-player .player-name,  .m7-player .player-name, .m16-player .player-name{
     display: block;
     text-align: center;
     margin: 20px;
@@ -443,20 +455,21 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 .m5-player .player-title, .m7-player .player-title{
   text-align: center;
   min-height: 18px;
+  width:200px;
 }
 
-.m5-player .player-p, .m7-player .player-p {
+.m5-player .player-p, .m7-player .player-p , .m16-player .player-p{
   margin: 10px 36px 0 36px;
   color: #999999;
 }
 
-.m5-player .player-title span, .m7-player .player-title span{
+.m5-player .player-title span, .m7-player .player-title span, .m16-player .player-title span{
   display: block;
   height: 18px;
   line-height: 18px;
 }
 
-.m5-player .player-head, .m7-player .player-head {
+.m5-player .player-head, .m7-player .player-head , .m16-player .player-head{
   height: 152px;
   width: 152px;
   margin: 6px auto 0;
@@ -628,6 +641,101 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   margin: 0 auto;
   display: block;
 }
+.main16{
+  background: url('../images/main16-bg.png') center center no-repeat;
+  background-size: auto;
+  height: 760px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.m16-player {
+  width: 1120px;
+  margin: 30px auto 0;
+  position:relative;
+}
+
+
+.m16-player table {
+  display: block;
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.main16 img{
+  display: block;
+  margin: 0 auto;
+}
+
+.m16-player .player-head {
+  height: 200px;
+  width: 219px;
+  margin: 6px auto 0;
+  overflow: hidden;
+}
+
+.m16-player td {
+  display: inline-block;
+  width: 368px;
+  margin: 1px;
+  float: left;
+}
+
+.main16-left{
+  background: url('../images/main16_left.png') center center no-repeat;
+  background-size: contain;
+  width: 473px;
+  height: 211px;
+  position: absolute;
+  top: -160px;
+  left: 14px;
+}
+
+.mark_title{
+  color: #333;
+  height: 71px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.m16-player .player-title{
+  height: 61px;
+  text-align: center;
+  min-height: 18px;
+  margin: 20px 0 20px 84px;
+}
+
+.m16-player .player-title img{
+    margin: 0 10px;
+    float:left;
+}
+
+.m16-player .player-title span{
+  line-height: 28px;
+  display: block;
+  height: 28px;
+  font-size: 18px;
+
+  text-align: left;
+}
+
+.m16-player .player-title .name{
+  color: #588cd7;
+}
+
+.m16-player .player-title .title{
+  color: #5b5b5b;
+}
+
+.main16-right{
+  background: url('../images/main16_right.png') center center no-repeat;
+  background-size: contain;
+  width: 433px;
+  height: 233px;
+  position: absolute;
+  top: -160px;
+  left: 636px;
+}
 
 .main8{
   height: 660px;
@@ -707,14 +815,73 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 .logo-qidian{
-  background: url('../images/logo_qidian.png') center center no-repeat;
-  background-size: contain;
+  /*background: url('../images/logo_qidian.png') center center no-repeat;*/
+  /*background-size: 172px 49px;*/
   height: 58px;
   position: relative;
   top: -17px;
   width: 205px !important;
 }
 
+.logo-qidian img{
+  height: 59.96px;
+  width: 172px;
+}
+
 .phone-logo-qidian{
     display:none;
+}
+
+.ml-top{
+  color: #333;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.ml-p{
+  color: #262626;
+  font-size: 15px;
+  line-height: 28px;
+  width: 862px;
+  margin: 48px auto 0;
+  font-size: 15px;
+}
+
+.location-img{
+  width: 862px;
+  height: 634px;
+  margin: 10px auto 48px;
+}
+
+.location-img img{
+    width:100%;
+    height:100%;
+
+}
+
+.ml{
+  width: 100%;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+.hd-nav li#second, .hd-nav li#champion, .hd-nav li#third{
+    width:55px;
+}
+
+#player_third .player-title{
+    margin-left: 64px;
+}
+
+#player_second .player-title{
+    margin-left: 64px;
+}
+
+#player_second .player-title img{
+    margin-right: 30px;
+}
+
+#player_third .player-title img{
+    margin-right: 30px;
 }

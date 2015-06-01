@@ -9,7 +9,7 @@ define(function(){
     var pc_init = function(){
         var is_ie = !($.support.leadingWhitespace);
         var selected_zone = undefined;
-        var rule_position = undefined;
+//        var rule_position = undefined;
         function excahnge_zones(current){
             if(selected_zone)$(selected_zone).removeClass('active_zone');
             $(current).addClass('active_zone');
@@ -21,10 +21,29 @@ define(function(){
             excahnge_zones(_this);
 		    $.scrollTo(900, 500);
 	    });
-	    $("#rules").click(function(){
+//	    $("#rules").click(function(){
+//            var _this = this;
+//            excahnge_zones(_this);
+//		    $.scrollTo(rule_position - 40, 500);
+//	    });
+        $("#champion").click(function(){
             var _this = this;
             excahnge_zones(_this);
-		    $.scrollTo(rule_position - 40, 500);
+            var video_position = $('#player_champion').offset().top;
+		    $.scrollTo(video_position - 171, 500);
+	    });
+
+        $("#second").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var video_position = $('#player_second').offset().top;
+		    $.scrollTo(video_position - 71, 500);
+	    });
+        $("#third").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var video_position = $('#player_third').offset().top;
+		    $.scrollTo(video_position - 71, 500);
 	    });
         $("#luyan").click(function(){
             var _this = this;
@@ -32,6 +51,7 @@ define(function(){
             var video_position = $('.main8').offset().top;
 		    $.scrollTo(video_position - 40, 500);
 	    });
+
         $("#final").click(function(){
             var _this = this;
             excahnge_zones(_this);
@@ -48,12 +68,17 @@ define(function(){
             var _this = this;
             excahnge_zones(_this);
             var player_position = $('.main5').offset().top;
-            $.scrollTo(player_position - 50, 500);
+            $.scrollTo(player_position - 40, 500);
 	    });
 	    $("#partners").click(function(){
             var _this = this;
             excahnge_zones(_this);
-            $.scrollTo($('#main4').offset().top, 500);
+            $.scrollTo($('#main4').offset().top - 50, 500);
+	    });
+	    $("#location").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            $.scrollTo($('#ml').offset().top - 50, 500);
 	    });
         function html_pdg(info){
             var luyan = info.luyan?('<div class="luyan-div"><a class="luyan" target="_blank" href="' + info.luyan +'"></a></div>'):'';
@@ -61,7 +86,37 @@ define(function(){
             return img + '<span class="player-name">'+ info.name +'</span><div class="player-title"><span>'+
                 info.title + '</span></div>' + luyan + '<p class="player-p">'+ info.par +'</p>';
         }
+        function html_pdg2(info){
+            var luyan = info.luyan?('<div class="luyan-div"><a class="luyan" target="_blank" href="' + info.luyan +'"></a></div>'):'';
+            var img = info.img?('<div class="player-head"><img class="player" src="images/players/' + info.img + '"></div>'):'';
+            var title = info.mark_title ?('<div class="mark_title">'+ info.mark_title +'</div>'): '';
+            return title + img + '<div class="player-title"><img src="images/players/'+ info.mark  + '"><span class="name">'+
+                info.name + '</span><span class="title">'+ info.title + '</span></div>' + luyan + '<p class="player-p">'+ info.par +'</p>';
+        }
         var players = {};
+        players.players16 = [
+             {                id: 40,
+                img: 'second.png',
+                name: '李浅',
+                title: 'Bionic cough simulator',
+                mark_title: '亚军',
+                mark: 'player_second.png',
+                par: '一种创新的、重症呼吸治疗设备，用于插管呼吸机病人，国际领先技术，多家三甲医院主任认可。'},
+             {                id: 5,
+                img: 'champion.png',
+                name: '陈拯民',
+                title: '星谷实验室',
+                mark: 'player_first.png',
+//                size: 2,
+                par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
+             {                id: 30,
+                img: 'third.png',
+                name: '李俊',
+                title: '成都福际生物技术',
+                mark_title: '季军',
+                mark: 'player_third.png',
+                par: '福际团队基于自主研发的Direct PCR 技术，革命性的将传统两步法PCR改为一步法，开发出填补市场空白的直接PCR/qPCR系列试剂盒。'}
+        ];
         players.players0 = [
               {                id: 1,
                 name: '李晓光',
@@ -436,14 +491,15 @@ define(function(){
         }
         players.players0.sort(cmp);
         players.players1.sort(cmp);
-        function inlit_players(element, players){
+        function inlit_players(element, players, template){
               var list = $(element).find('td');
               for(var i=0;i<players.length;i++){
                   var style=players[i].size?( 219 * players[i].size + 'px' ):undefined;
-                  $(list[i]).html(html_pdg(players[i]));
+                  $(list[i]).html(template(players[i]));
                   if(style)$(list[i]).css('width', style);
               }
         };
+
         $('.js-player-trigger').click(function(){
             var _this = $(this);
             if(_this.hasClass('active'))return;
@@ -460,14 +516,17 @@ define(function(){
             $('.m5-trigger .active').removeClass('active');
             _this.addClass('active');
         });
-        inlit_players('#player0', players.players0);
-        inlit_players('#player1', players.players1);
-        inlit_players('#player2', players.players2);
+
+        inlit_players('#player16', players.players16, html_pdg2);
+        inlit_players('#player0', players.players0, html_pdg);
+        inlit_players('#player1', players.players1, html_pdg);
+        inlit_players('#player2', players.players2, html_pdg);
+
 
         $('.main5').css('height',$('#player0').height() + 240);
         $('.main7').css('height',$('#player2').height() + 80);
         $('#player1').hide();
-        $('#slides').html('<img src="images/luyan/IMG_3205.jpg"><img src="images/luyan/IMG_3206.jpg"><img src="images/luyan/IMG_3253.jpg"><img src="images/luyan/IMG_3284.jpg"><img src="images/luyan/IMG_3315.jpg"><img src="images/luyan/IMG_3327.jpg"><img src="images/luyan/IMG_3349.jpg"><img src="images/luyan/IMG_3363.jpg"><img src="images/luyan/IMG_3418.jpg"><img src="images/luyan/IMG_3443.jpg"><img src="images/luyan/IMG_3451.jpg"><img src="images/luyan/IMG_3510.jpg"><img src="images/luyan/IMG_3532.jpg"><img src="images/luyan/IMG_3563.jpg"><img src="images/luyan/IMG_3568.jpg"><img src="images/luyan/IMG_3583.jpg"><img src="images/luyan/IMG_3676.jpg"><img src="images/luyan/IMG_3702.jpg"><img src="images/luyan/IMG_3775.jpg"><img src="images/luyan/IMG_3787.jpg"><img src="images/luyan/IMG_3814.jpg"><img src="images/luyan/IMG_3899.jpg"><img src="images/luyan/IMG_3925.jpg">')
+        $('#slides').html('<img src="images/luyan/0001.JPG"><img src="images/luyan/0002.JPG"><img src="images/luyan/0003.JPG"><img src="images/luyan/0004.JPG"><img src="images/luyan/0005.JPG"><img src="images/luyan/0006.JPG"><img src="images/luyan/0007.JPG"><img src="images/luyan/0008.JPG"><img src="images/luyan/0009.JPG"><img src="images/luyan/0010.JPG"><img src="images/luyan/0011.JPG"><img src="images/luyan/0012.JPG"><img src="images/luyan/0013.JPG"><img src="images/luyan/0014.JPG"><img src="images/luyan/0015.JPG"><img src="images/luyan/0016.JPG"><img src="images/luyan/0017.JPG"><img src="images/luyan/0018.JPG"><img src="images/luyan/0019.JPG"><img src="images/luyan/0020.JPG"><img src="images/luyan/IMG_3205.jpg"><img src="images/luyan/IMG_3206.jpg"><img src="images/luyan/IMG_3253.jpg"><img src="images/luyan/IMG_3284.jpg"><img src="images/luyan/IMG_3315.jpg"><img src="images/luyan/IMG_3327.jpg"><img src="images/luyan/IMG_3349.jpg"><img src="images/luyan/IMG_3363.jpg"><img src="images/luyan/IMG_3418.jpg"><img src="images/luyan/IMG_3443.jpg"><img src="images/luyan/IMG_3451.jpg"><img src="images/luyan/IMG_3510.jpg"><img src="images/luyan/IMG_3532.jpg"><img src="images/luyan/IMG_3563.jpg"><img src="images/luyan/IMG_3568.jpg"><img src="images/luyan/IMG_3583.jpg"><img src="images/luyan/IMG_3676.jpg"><img src="images/luyan/IMG_3702.jpg"><img src="images/luyan/IMG_3775.jpg"><img src="images/luyan/IMG_3787.jpg"><img src="images/luyan/IMG_3814.jpg"><img src="images/luyan/IMG_3899.jpg"><img src="images/luyan/IMG_3925.jpg">')
         $('#slides').slidesjs({
              width: 1080,
             height: 528,
@@ -479,9 +538,9 @@ define(function(){
             }
         });
 
-        rule_position = $('#main3').offset().top;
-        $('.m3-bg4').css('top', rule_position);
-        $('.m3-bg5').css('top', rule_position + 1107);
+//        rule_position = $('#main3').offset().top;
+//        $('.m3-bg4').css('top', rule_position);
+//        $('.m3-bg5').css('top', rule_position + 1107);
         $('.embed-body').html('<embed src="http://player.video.qiyi.com/844f66c3696e217f44b8190b02556f4c/0/0/v_19rrnqfhdw.swf-albumId=369093800-tvId=369093800-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="837" height="610" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
         $('.embed-panel .btn').click(function(){
             if($(this).hasClass('active'))return false;
