@@ -642,7 +642,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   display: block;
 }
 .main16{
-  background: url('../images/main16-bg.png') center center no-repeat;
+  background: url('../images/main16-bg.png') center bottom no-repeat;
   background-size: auto;
   height: 760px;
   width: 100%;
@@ -702,7 +702,8 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   height: 61px;
   text-align: center;
   min-height: 18px;
-  margin: 20px 0 20px 84px;
+  /*margin: 20px 0 20px 84px;*/
+  margin: 20px auto;
 }
 
 .m16-player .player-title img{
@@ -715,8 +716,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   display: block;
   height: 28px;
   font-size: 18px;
-
-  text-align: left;
+  text-align: center;
 }
 
 .m16-player .player-title .name{
@@ -871,11 +871,13 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 #player_third .player-title{
-    margin-left: 64px;
+    /*margin-left: 64px;*/
+    margin: 0 auto;
 }
 
 #player_second .player-title{
-    margin-left: 64px;
+    /*margin-left: 64px;*/
+    margin:0 auto;
 }
 
 #player_second .player-title img{

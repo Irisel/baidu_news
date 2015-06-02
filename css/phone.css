@@ -880,7 +880,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 
 #player16 .player-title span{
-  float: left;
+  /*float: left;*/
   display: block;
 }
 
@@ -912,4 +912,9 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 #player_third .name{
 
+}
+
+.main16{
+  background: url('../images/main16-bg.png') center bottom no-repeat;
+  background-size: auto;
 }

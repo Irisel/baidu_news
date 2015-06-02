@@ -445,20 +445,22 @@ define(function(){
                 name: '陈拯民',
                 title: '星谷实验室',
                 mark_title: '总冠军',
-                mark: 'player_first.png',
+//                mark: 'player_first.png',
 //                size: 2,
                 par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
             {                id: 40,
                 img: 'second.png',
                 name: '李浅',
                 title: 'Bionic cough simulator',
-                mark: 'player_second.png',
+                mark_title: '亚军',
+//                mark: 'player_second.png',
                 par: '一种创新的、重症呼吸治疗设备，用于插管呼吸机病人，国际领先技术，多家三甲医院主任认可。'},
              {                id: 30,
                 img: 'third.png',
                 name: '李俊',
                 title: '成都福际生物技术',
-                mark: 'player_third.png',
+                mark_title: '季军',
+//                mark: 'player_third.png',
                 par: '福际团队基于自主研发的Direct PCR 技术，革命性的将传统两步法PCR改为一步法，开发出填补市场空白的直接PCR/qPCR系列试剂盒。'}
         ];
         var players2 = [
@@ -540,7 +542,7 @@ define(function(){
             var luyan = info.luyan?('<div class="luyan-div"><a class="luyan" target="_blank" href="' + info.luyan +'"></a></div>'):'';
             var img = info.img?('<div class="player-head"><img class="player" src="images/players/' + info.img + '"></div>'):'';
             var title = info.mark_title ?('<div class="mark_title">'+ info.mark_title +'</div>'): '';
-            return title + img + '<div class="player-title"><img src="images/players/'+ info.mark  + '"><span class="name">'+
+            return title + img + '<div class="player-title"><span class="name">'+
                 info.name + '</span><span class="title">'+ info.title + '</span></div>' + luyan + '<p class="player-p">'+ info.par +'</p>';
         }
 
