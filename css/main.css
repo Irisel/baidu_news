@@ -642,9 +642,9 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   display: block;
 }
 .main16{
-  background: url('../images/main16-bg.png') center bottom no-repeat;
-  background-size: auto;
-  height: 760px;
+  background: url('../images/main16-bg.png') center top no-repeat;
+  background-size: auto 1200px;
+  height: 1160px;;
   width: 100%;
   padding-top: 40px;
 }
@@ -886,4 +886,31 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 
 #player_third .player-title img{
     margin-right: 30px;
+}
+
+.champions{
+  width: 1120px;
+  margin: 56px auto 0;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.champions td, .champions th{
+    text-align: center;
+    width:372px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 56px;
+    color: #333333
+}
+
+
+.champions tbody tr:nth-child(odd) td{
+    background-color: #f6f6f6;
+}
+
+.champions tbody tr:nth-child(even), .champions thead tr{
+    background-color: #ffffff;
 }

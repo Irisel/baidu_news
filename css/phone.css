@@ -916,5 +916,33 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .main16{
   background: url('../images/main16-bg.png') center bottom no-repeat;
-  background-size: auto;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.champions{
+  width: 90%;
+  margin: 20px auto 0;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.champions td, .champions th{
+    text-align: center;
+    width:33.3%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 56px;
+    color: #333333
+}
+
+
+.champions tbody tr:nth-child(odd) td{
+    background-color: #f6f6f6;
+}
+
+.champions tbody tr:nth-child(even), .champions thead tr{
+    background-color: #ffffff;
 }
