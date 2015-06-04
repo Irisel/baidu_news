@@ -27,7 +27,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 .ul-panel {
   height: 145px;
   position: absolute;
-  bottom: 242px;
+  bottom: 156px;
   display: block;
   width: 100%;
 }
@@ -60,7 +60,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .phone-panel .panel-select{
   width: 171px;
-  height: 425px;
+  height: 325px;
   border-radius: 10px;
   position: relative;
   left: -110px;
@@ -575,6 +575,16 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .luyan{
     background: url('../images/players/luyan.png') center center no-repeat;
+    background-size:contain;
+    display:block;
+    position:relative;
+    margin:0 auto;
+    height:20px;
+    width:74px;
+}
+
+.juesai{
+    background: url('../images/juesai.png') center center no-repeat;
     background-size:contain;
     display:block;
     position:relative;

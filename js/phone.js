@@ -445,6 +445,7 @@ define(function(){
                 name: '陈拯民',
                 title: '星谷实验室',
                 mark_title: '总冠军',
+                luyan: 'http://www.iqiyi.com/v_19rroj2a30.html',
 //                mark: 'player_first.png',
 //                size: 2,
                 par: '星谷实验室开发的电机，其功率密度是国际市场上最高，相同重量下星谷的电机是Tesla汽车电机功率的2.5至3倍'},
@@ -539,7 +540,7 @@ define(function(){
         }
 
         function html_pdg2(info){
-            var luyan = info.luyan?('<div class="luyan-div"><a class="luyan" target="_blank" href="' + info.luyan +'"></a></div>'):'';
+            var luyan = info.luyan?('<div class="luyan-div"><a class="juesai" target="_blank" href="' + info.luyan +'"></a></div>'):'';
             var img = info.img?('<div class="player-head"><img class="player" src="images/players/' + info.img + '"></div>'):'';
             var title = info.mark_title ?('<div class="mark_title">'+ info.mark_title +'</div>'): '';
             return title + img + '<div class="player-title"><span class="name">'+

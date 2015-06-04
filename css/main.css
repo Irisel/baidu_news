@@ -497,6 +497,16 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
     margin:0 auto;
 }
 
+.juesai{
+    background: url('../images/juesai.png') center center no-repeat;
+    background-size:contain;
+    display:block;
+    height:19px;
+    width: 80px;
+    position:relative;
+    margin:0 auto;
+}
+
 .luyan-div{
     margin-top:10px;
 }
@@ -872,9 +882,6 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   background-color: #fafafa;
 }
 
-.hd-nav li#second, .hd-nav li#champion, .hd-nav li#third{
-    width:55px;
-}
 
 #player_third .player-title{
     /*margin-left: 64px;*/
