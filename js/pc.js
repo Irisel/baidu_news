@@ -541,7 +541,7 @@ define(function(){
 //        rule_position = $('#main3').offset().top;
 //        $('.m3-bg4').css('top', rule_position);
 //        $('.m3-bg5').css('top', rule_position + 1107);
-        $('.embed-body').html('<embed src="http://player.video.qiyi.com/844f66c3696e217f44b8190b02556f4c/0/0/v_19rrnqfhdw.swf-albumId=369093800-tvId=369093800-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="837" height="610" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
+        $('.embed-body').html('<embed src="http://player.video.qiyi.com/6f0b7c2f4ff688697311ec5638e76bff/0/0/v_19rroj2a30.swf-albumId=371000800-tvId=371000800-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="837" height="610" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
         $('.embed-panel .btn').click(function(){
             if($(this).hasClass('active'))return false;
             $('.embed-panel .active').removeClass('active');

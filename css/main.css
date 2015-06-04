@@ -203,6 +203,11 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
     background: url(../images/logo6.png) center center no-repeat;
 }
 
+.ft-logo-specail{
+    height: 144px;
+    background: url(../images/logo_specail.png) center center no-repeat;
+}
+
 .ft-logo3{
     height: 144px;
     background: url(../images/logo7.png) center center no-repeat;
@@ -504,7 +509,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 .m6-inner{
-  width: 1120px;
+  width: 1140px;
   margin: 30px auto 0;
   height: 610px;
 }
@@ -519,9 +524,10 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 .main6 .embed-panel{
   float: left;
   height: 610px;
-  width: 283px;
+  width: 303px;
   display: inline-block;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   cursor: pointer;
 }
 

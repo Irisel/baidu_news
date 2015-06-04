@@ -629,7 +629,7 @@ define(function(){
          });
          $('.slidesjs-navigation').css('top', (120 - $('.slidesjs-slide').height()/2) * (-1));
          if(!iOS()){
-             $('.embed-body').html('<embed src="http://player.video.qiyi.com/844f66c3696e217f44b8190b02556f4c/0/0/v_19rrnqfhdw.swf-albumId=369093800-tvId=369093800-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="'+ screen_width * 0.9 +'" height="' + screen_width * 0.9 * 35/48 + '" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
+             $('.embed-body').html('<embed src="http://player.video.qiyi.com/6f0b7c2f4ff688697311ec5638e76bff/0/0/v_19rroj2a30.swf-albumId=371000800-tvId=371000800-isPurchase=0-cnId=30" allowFullScreen="true" quality="high" width="'+ screen_width * 0.9 +'" height="' + screen_width * 0.9 * 35/48 + '" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>');
              $('.embed-panel .btn').click(function(){
                 if($(this).hasClass('active'))return false;
                 $('.embed-panel .active').removeClass('active');
@@ -638,7 +638,7 @@ define(function(){
                 $('.embed-body').html(embed);
              })
          }else{
-             $('.embed-body').html('<iframe height="'+ screen_width * 0.9 * 35/48 +'px;" width="'+ screen_width * 0.9 + 'px;" src="http://m.iqiyi.com/splay.html?tvid=369093800&amp;vid=844f66c3696e217f44b8190b02556f4c" frameborder="0" allowfullscreen=""></iframe>');
+             $('.embed-body').html('<iframe height="'+ screen_width * 0.9 * 35/48 +'px;" width="'+ screen_width * 0.9 + 'px;" src="http://m.iqiyi.com/splay.html?tvid=371000800&amp;vid=6f0b7c2f4ff688697311ec5638e76bff" frameborder="0" allowfullscreen=""></iframe>');
              $('.embed-panel .btn').click(function(){
                 if($(this).hasClass('active'))return false;
                 $('.embed-panel .active').removeClass('active');

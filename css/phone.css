@@ -328,6 +328,12 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
    background-size: 260px auto;
 }
 
+.specail{
+   background: url('../images/mobile_logo_specail.png') center no-repeat;
+   background-size: contain;
+   height:30px !important;
+}
+
 .bjia{
    background: url('../images/mobile_logo7.png') center no-repeat;
    display: block;
@@ -584,6 +590,7 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 .main8{
   width: 100%;
   background-color: #ffffff;
+  clear: left;
 }
 
 .main8-inner{
@@ -706,11 +713,11 @@ body,input,textarea,button,select,pre,code{font-family: 'fzzt', 'Hiragino Sans G
 
 .embed-panel .btn .text{
     float:left;
+    margin-right: 5px;
 }
 
 .embed-panel{
   width: 100%;
-  min-height: 240px;
 }
 
 .feature{
