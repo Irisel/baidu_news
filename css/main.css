@@ -51,7 +51,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 .hd-nav li a:hover , .active_zone, .active_zone a{
-    color: #5c5c5c !important;
+    color: #ee5956 !important;
 }
 
 .sense{
